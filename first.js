@@ -1,10 +1,5 @@
-var name = "rahul";
-console.log(name);
+{
+  let isFollow = true;
+}
 
-// update
-name = "rohit";
-console.log(name);
-
-// redeclare
-var name = "surender";
-console.log(name);
+let isFollow = true;
