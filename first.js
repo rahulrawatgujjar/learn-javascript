@@ -1,3 +1,14 @@
-console.log("Hello, This is Rahul.");
-console.log("I am learning javascript.");
-console.log("This is my first js program.");
+name = "rahul";
+age = 23;
+marks = 88.8;
+isPass = true;
+isFollow = false;
+a = null;
+b = undefined;
+console.log(name);
+console.log(age);
+console.log(marks);
+console.log(isPass);
+console.log(isFollow);
+console.log(a);
+console.log(b);
