@@ -1,15 +1,8 @@
-const student = {
-  name : "rahul",
-  age : 23,
-  marks : 88.9,
-  isPass : true
+const product = {
+  name : "parker jotter pen",
+  rating: 4,
+  price: 270,
+  color: "black"
 };
 
-console.log(student);
-
-console.log(student["name"]);
-console.log(student.name);
-
-console.log(student.marks);
-student.marks += 1;
-console.log(student.marks);
+console.log(product);
