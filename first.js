@@ -1,14 +1,4 @@
-name = "rahul";
-age = 23;
-marks = 88.8;
-isPass = true;
-isFollow = false;
-a = null;
-b = undefined;
+let name = "rahul";
 console.log(name);
-console.log(age);
-console.log(marks);
-console.log(isPass);
-console.log(isFollow);
-console.log(a);
-console.log(b);
+name = "rawat";
+console.log(name);
