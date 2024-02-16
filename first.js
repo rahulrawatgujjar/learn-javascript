@@ -1,8 +1,11 @@
-const product = {
-  name : "parker jotter pen",
-  rating: 4,
-  price: 270,
-  color: "black"
+const profile = {
+  username : "shradhakhapra",
+  post: 195,
+  follower: 569000,
+  following: 4,
+  isFollow: false
 };
 
-console.log(product);
+console.log(profile);
+console.log(profile["username"]);
+console.log(typeof profile["username"]);
