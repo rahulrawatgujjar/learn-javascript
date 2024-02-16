@@ -1,4 +1,10 @@
-const name = "rahul";
+var name = "rahul";
 console.log(name);
-name = "rawat";
+
+// update
+name = "rohit";
+console.log(name);
+
+// redeclare
+var name = "surender";
 console.log(name);
