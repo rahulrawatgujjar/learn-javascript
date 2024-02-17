@@ -1,19 +1,9 @@
-// assignment operator
+// comparision operator
 
 let a=5;
-
-console.log("a =",a);
-a+=3;
-console.log("a =",a);
-
-a-=2;
-console.log("a =",a);
-
-a/=2;
-console.log("a =",a);
-
-a**=2;
-console.log("a =",a);
-
-a%=5;
-console.log("a =",a);
+let b="5";
+console.log("a=",a,"b=",b);
+console.log("a==b:",a==b);//true because string is converted into number and then comparision takes place
+console.log("a!=b:",a!=b);
+console.log("a===b:",a===b);//false, it checks data type also
+console.log("a!==b",a!==b);
