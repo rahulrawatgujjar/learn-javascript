@@ -1,6 +1,5 @@
-let sum=0;
-let n=prompt("Enter n:");
-for (let i=1;i<=n;i++){
-  sum+=i;
+let i=0;
+while (i<5){
+  console.log("i:",i);
+  i++;
 }
-console.log("Sum of first",n,"natural numbers:",sum);
