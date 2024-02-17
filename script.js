@@ -1,6 +1,5 @@
-let marks=[97,35,25,54];
-let sum=0;
-for(let val of marks){
-  sum+=val;
+let prices = [250,645,300,900,50];
+for (let i=0;i<prices.length;i++){
+  prices[i]*=0.9;
 }
-console.log(`Average marks of class: ${sum/marks.length}`);
+console.log(prices);
