@@ -1,6 +1,19 @@
-let a=2;
-let b=3;
+// conditional statement
 
-console.log("a==2 && b==3 :",a==2 && b==3);
-console.log("a==2 || b==4",a==2 || b==4);
-console.log("!(a==2) :",!(a==2));
+let age = 67;
+
+if (age<18){
+  console.log("you can not vote");
+}else if (age>=60) {
+  console.log("you can relax");
+} else{
+  console.log("you can vote");
+}
+
+
+let mode = "dark";
+let color;
+
+if (mode=="dark") color="black"
+
+console.log(color);
