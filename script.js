@@ -1,18 +1,27 @@
-// string in js
-let myName= "Rahul";
-console.log(myName.length);
-console.log(myName[0]);
+// string methods
 
+let str= "raHul";
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
 
-// template literals
-let str = `this is a template literal`;
-console.log(str);
+// to remove white space
+console.log("  hello ".trim());
 
+// slicing
+console.log(str.slice(0,3));
+console.log(str.slice(3));
 
-// string interpolation
-const student={
-  name: "surender",
-  age: 23
-};
-let para = `hello i am ${student.name} and my age is ${student.age}`;
-console.log(para);
+// concatination
+let str1="rahul";
+let str2="rawat";
+let result= str1.concat(str2);
+console.log(result);
+console.log(str1+str2);
+
+// replace ( and replaceall()
+let exp= "rahulrawat";
+console.log(exp.replace("r","n"));
+console.log(exp.replaceAll("r","n"));
+
+// charAt
+console.log(str.charAt(2));
