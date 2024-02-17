@@ -1,9 +1,6 @@
-// comparision operator
+let a=2;
+let b=3;
 
-let a=5;
-let b="5";
-console.log("a=",a,"b=",b);
-console.log("a==b:",a==b);//true because string is converted into number and then comparision takes place
-console.log("a!=b:",a!=b);
-console.log("a===b:",a===b);//false, it checks data type also
-console.log("a!==b",a!==b);
+console.log("a==2 && b==3 :",a==2 && b==3);
+console.log("a==2 || b==4",a==2 || b==4);
+console.log("!(a==2) :",!(a==2));
