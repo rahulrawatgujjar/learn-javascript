@@ -1,6 +1,4 @@
-let i=0
-
-do{
-  console.log("i:",i);
-  i++;
-} while(i<5);
+let name="Rahul Rawat";
+for(let val of name){
+  console.log(val);
+}
