@@ -1,9 +1,4 @@
-let gameNum=33;
-let userNum;
-while (true){
-  userNum=prompt("Guess the number:");
-  if( gameNum==userNum){
-    console.log("you guess correct number ",userNum)
-    break;
-  }
-}
+let myName= "Rahul";
+console.log(myName.length);
+
+console.log(myName[0]);
