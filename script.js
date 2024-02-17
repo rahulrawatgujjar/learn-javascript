@@ -17,3 +17,14 @@ console.log(marks);
 // array may contain different types of data
 let items=["car",true,12,null,4.4];
 console.log(items);
+
+// print array using for loop
+let cities=["bhiwani","hisar","rohtak","delhi"];
+for(let i=0; i<cities.length; i++){
+  console.log(cities[i]);
+}
+
+// using for-of loop
+for(let city of cities){
+  console.log(city.toUpperCase());
+}
