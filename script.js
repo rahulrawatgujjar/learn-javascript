@@ -1,8 +1,9 @@
-// find squares of numbers of an array
-let nums=[1,2,3,4,5];
+// map method: it is like forEach but it can return values that can be assigned in an array
 
-let findSquare = (val)=>{
-  console.log(val**2);
-};
+let nums=[1,2,3,4];
 
-nums.forEach(findSquare);
+let newArray = nums.map((value)=>{
+  return value**3;
+});
+
+console.log(newArray);
