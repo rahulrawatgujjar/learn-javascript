@@ -1,19 +1,29 @@
-// function in js
-function Sum(a,b){
-  return a+b;
+// function to return no. of vowel in stirng
+function countVowel(s){
+  count=0;
+  for(let val of s){
+    if (val=="a" || val=="e" || val=="i" || val=="o" || val=="u"){
+      count++;
+    }
+  }
+  return count;
 }
-console.log(Sum(3,2));
 
 
-// another example
-function fun(){
-  console.log("fun is called");
-}
-
-
-// arrow function in js (these are generally used for small task)
-const findSum = (x,y)=>{
-  return x+y;
+// same task using arrow function 
+const totalVowel = (s)=>{
+  count=0;
+  for(let val of s){
+    if (val=="a" || val=="e" || val=="i" || val=="o" || val=="u"){
+      count++;
+    }
+  }
+  return count;
 };
-console.log(findSum); // findSum is a variable that stores function defination
-console.log(findSum(4,5));
+
+
+
+
+str = prompt("Enter string:");
+// console.log(`No. of vowels in ${str}: ${countVowel(str)}`); 
+console.log(`No. of vowels in ${str}: ${totalVowel(str)}`); 
