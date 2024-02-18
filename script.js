@@ -19,3 +19,22 @@ let newItems = items.filter((value)=>{
 });
 
 console.log(newItems);
+
+
+
+// reduce method: perform some operations and reduce the array to a single value. It returns that single value.
+
+let array1 = [1,2,3,4,2];
+// find sum
+const sumArray1= array1.reduce((res,curr)=>{
+  return res+curr;
+});
+
+console.log(sumArray1);
+
+// find maximum element
+const maxArray1= array1.reduce((res,curr)=>{
+  return curr>res ? curr : res;
+});
+
+console.log(maxArray1);
