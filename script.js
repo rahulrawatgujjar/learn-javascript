@@ -1,9 +1,8 @@
-// forEach method in arrays: it takes a callback function as an argument
-//    A callback is a function passed as argument to another function.
+// find squares of numbers of an array
+let nums=[1,2,3,4,5];
 
-let items=["car","bus","bike","cycle","scotter"];
-items.forEach((val,idx)=>{                          // forEach has 3 arguments
-  console.log(val.toUpperCase());
-});
+let findSquare = (val)=>{
+  console.log(val**2);
+};
 
-// higher order function: that takes function as argument or return a function.
+nums.forEach(findSquare);
