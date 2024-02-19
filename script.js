@@ -1,6 +1,4 @@
-// textContent:
-//  return textual content and also for hidden elements
+// create h2 heading "hello javascript " and append from apnacollege students using js
 
-let div= document.querySelector("div");
-console.log(div.innerText);
-console.log(div.textContent);
+let heading= document.querySelector("h2");
+heading.innerText+=" from ApnaCollege students";
