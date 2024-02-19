@@ -1,4 +1,10 @@
-// create h2 heading "hello javascript " and append from apnacollege students using js
+// create 3 div with common className box. Access them and add unique text to each
 
-let heading= document.querySelector("h2");
-heading.innerText+=" from ApnaCollege students";
+let divs= document.querySelectorAll(".box");
+console.dir(divs);
+
+let i=1;
+for(div of divs){
+  div.innerText=`new unique text ${i}` ;
+  i++;
+}
