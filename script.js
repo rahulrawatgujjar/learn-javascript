@@ -5,3 +5,5 @@ console.log(div);
 
 console.log(div.getAttribute("name"));
 console.log(div.getAttribute("class"));
+
+div.setAttribute("name","box1");
