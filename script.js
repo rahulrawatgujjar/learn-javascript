@@ -3,7 +3,5 @@
 let div = document.querySelector("div");
 console.log(div);
 
-console.log(div.getAttribute("name"));
-console.log(div.getAttribute("class"));
-
-div.setAttribute("name","box1");
+div.style.backgroundColor = "red";
+div.style.fontSize= "23px";
