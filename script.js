@@ -6,4 +6,4 @@ let button = document.createElement("button");
 button.innerText= "click me!";
 console.log(button);
 
-div.before(button);
+div.after(button);
