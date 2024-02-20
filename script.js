@@ -1,7 +1,14 @@
-// DOM Manipulation : Attributes and style
+// DOM manipulation: insert elements
 
 let div = document.querySelector("div");
-console.log(div);
 
-div.style.backgroundColor = "red";
-div.style.fontSize= "23px";
+let button = document.createElement("button");
+button.innerText= "click me!";
+console.log(button);
+
+// append: insert at the end of element
+div.append(button);
+
+// insert at the begining of element
+div.prepend(button);
+
