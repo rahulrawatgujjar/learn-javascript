@@ -7,3 +7,5 @@ button.innerText= "click me!";
 console.log(button);
 
 div.after(button);
+
+button.remove();
