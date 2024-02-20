@@ -1,10 +1,7 @@
-// create 3 div with common className box. Access them and add unique text to each
+// DOM Manipulation : Attributes and style
 
-let divs= document.querySelectorAll(".box");
-console.dir(divs);
+let div = document.querySelector("div");
+console.log(div);
 
-let i=1;
-for(div of divs){
-  div.innerText=`new unique text ${i}` ;
-  i++;
-}
+console.log(div.getAttribute("name"));
+console.log(div.getAttribute("class"));
