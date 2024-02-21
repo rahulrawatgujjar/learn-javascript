@@ -1,23 +1,19 @@
-// Event Listeners (method 3)
+// create a button for toggling between light and dark mode
+let modeBtn= document.querySelector("#mode");
+let body= document.querySelector("body");
+let currMode= "light";
 
-let btn1= document.querySelector("#btn1");
-
-btn1.addEventListener("click",(evt)=>{
-  console.log("button 1 is clicked using handler 1");
-  console.log(evt);
+mode.addEventListener("click",()=>{
+  console.log("you are trying to change mode");
+  if (currMode=="light"){
+    body.classList.add("dark");
+    body.classList.remove("light");
+    modeBtn.innerText= "Dark mode";
+    currMode="dark";
+  } else {
+    body.classList.add("light");
+    body.classList.remove("dark");
+    modeBtn.innerText= "Light mode";
+    currMode="light";
+  }
 });
-
-// we can handle same event multiple times
-btn1.addEventListener("click",(evt)=>{
-  console.log("button 1 is clicked using handler 2");
-});
-
-
-
-let div= document.querySelector("div");
-const handler= (evt)=>{
-  console.log("div is hovered");
-};
-div.addEventListener("mouseover",handler);
-
-div.removeEventListener("mouseover",handler);

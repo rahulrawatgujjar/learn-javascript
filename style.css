@@ -5,3 +5,17 @@ div {
   color: white;
   border: 1px solid black;
 }
+
+#mode {
+  background-color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
