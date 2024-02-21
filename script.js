@@ -1,22 +1,23 @@
-// event handling method 2 (node.event = arrowFunction)
+// Event Listeners (method 3)
 
 let btn1= document.querySelector("#btn1");
-btn1.onclick= (evt)=>{                    // evt is event object
-  console.log("button 1 is clicked");
+
+btn1.addEventListener("click",(evt)=>{
+  console.log("button 1 is clicked using handler 1");
   console.log(evt);
-  console.log(evt.type);
-  console.log(evt.target);
-  console.log(evt.clientX);
-  console.log(evt.clientY);
-};
+});
 
-// script.js have high priority than inline event handling
-let div = document.querySelector("div");
-div.onmouseover= (evt)=>{
-  console.log("js event using node.event");
-}
+// we can handle same event multiple times
+btn1.addEventListener("click",(evt)=>{
+  console.log("button 1 is clicked using handler 2");
+});
 
-// previous will be overwritten by current (this is drawback of method 2)
-btn1.onclick= (evt)=>{
-  console.log("overwite btn1.onclick");
+
+
+let div= document.querySelector("div");
+const handler= (evt)=>{
+  console.log("div is hovered");
 };
+div.addEventListener("mouseover",handler);
+
+div.removeEventListener("mouseover",handler);
