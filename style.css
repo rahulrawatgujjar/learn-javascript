@@ -27,6 +27,19 @@ img {
   align-items: center;
 }
 
+@keyframes choiceAnime {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+img:active {
+  animation: choiceAnime 1s ease-in-out 0s infinite normal backwards;
+}
+
 .choice:hover {
   background-color: #081b31;
   cursor: pointer;
@@ -100,3 +113,5 @@ img {
     margin-top: 1.5rem;
   }
 }
+
+
