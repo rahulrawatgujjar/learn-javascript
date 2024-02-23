@@ -1,33 +1,19 @@
-class Person{
-  constructor(name){
+// You are creating a website for your college.
+// create a class User with 2 properties name and email.
+// it has a method viewData that allow user to view website data
+
+let data= "this is a webpage";
+
+class User{
+  constructor(name,email){
     this.name=name;
-    this.species="homo sapiens";
+    this.email=email;
   }
 
-  eat(){
-    console.log("eat");
-  }
-}
-
-// super keyword:
-//    it is used to invoke constructor of parent class before using this or returning from child constructor
-//    it is also used to pass argument for parent class constructor
-//    it is also used to access properties and method of parent class in child class using super."name_of_property_or_method()"
-
-class Engineer extends Person{
-  constructor(name,branch){
-    super(name);
-    this.branch=branch;
-  }
-
-  work(){
-    super.eat();
-    console.log("Solve problems and build something.")
+  viewData(){
+    console.log(`Data:\n${data}`);
   }
 }
 
-let surender= new Engineer("Surender Suthar","Civil engg.");
-console.log(surender.name);
-console.log(surender.branch);
-console.log(surender.species);
-surender.work();
+let surender= new User("Surender Suthar","surender@gmail.com");
+surender.viewData();
