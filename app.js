@@ -1,4 +1,10 @@
 class ToyotaCar{
+  constructor(name,milage){
+    console.log("Object is creating");
+    this.carName=name;
+    this.milage=milage;
+  }
+
   start(){
     console.log("car started");
   }
@@ -7,16 +13,13 @@ class ToyotaCar{
     console.log("car stopped");
   }
 
-  setName(name){
-    this.carName=name;
-  }
-
   showName(){
     console.log(this.carName);
   }
 }
 
-let fortuner= new ToyotaCar();
-fortuner.setName("Fortuner");
-fortuner.showName();
-console.log(fortuner);
+fortuner= new ToyotaCar("Fortuner",22);
+console.log(fortuner.carName, fortuner.milage);
+
+camry= new ToyotaCar("Camry");
+console.log(camry.carName, camry.milage);
