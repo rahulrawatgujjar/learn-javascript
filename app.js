@@ -1,25 +1,31 @@
-class ToyotaCar{
-  constructor(name,milage){
-    console.log("Object is creating");
-    this.carName=name;
-    this.milage=milage;
+// class: it is a template for creation of objects
+class Person{
+  constructor(){
+    this.species="homo sapiens";
   }
 
-  start(){
-    console.log("car started");
+  eat(){
+    console.log("eat");
   }
 
-  stop(){
-    console.log("car stopped");
+  sleep(){
+    console.log("sleep");
   }
 
-  showName(){
-    console.log(this.carName);
+  work(){
+    console.log("do nothing!");
   }
 }
 
-fortuner= new ToyotaCar("Fortuner",22);
-console.log(fortuner.carName, fortuner.milage);
+// Inheritance:
+//      child class inherits properties and method of parent class
+class Engineer extends Person{
+  work(){
+    console.log("Solve problems and build something.")
+  }
+}
 
-camry= new ToyotaCar("Camry");
-console.log(camry.carName, camry.milage);
+let surender= new Engineer();
+surender.eat();  
+surender.work(); // method over-writing
+console.log(surender.species);
