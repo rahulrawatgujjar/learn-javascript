@@ -1,17 +1,28 @@
-// asynchronous :
-//  It allows next instructoin to execute in parallel with current instruction so that code flow do not get blocked
+// Callback hell:
+// Nested callbacks stacked below one another forms a pyramid like structure
+// which is difficult to understand
 
-console.log("1");
-console.log("2");
-
-function hello(){
-  console.log("hello");
+function getData(id,getNextData){
+  setTimeout(()=>{
+    console.log(`Data ${id}`);
+    if (getNextData){
+      getNextData();
+    }
+  },2000);
 }
-setTimeout(hello,2000);
 
-setTimeout(()=>{
-  console.log("world");
-},2000);
+// In this way all will start their timer at same time and wait parallel and give output at same time
 
-console.log("3");
-console.log("4")
+// getData(1);
+// getData(2);
+// getData(3);
+
+getData(1,()=>{
+  getData(2,()=>{
+    getData(3,()=>{
+      getData(4);
+    });
+  });
+});
+
+
