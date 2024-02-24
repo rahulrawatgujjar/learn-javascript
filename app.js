@@ -17,22 +17,36 @@ function getData(id){
 }
 
 // Promise chaining
-let p1= getData(1);
-p1.then((res)=>{
+
+getData(1).then((res)=>{
   console.log(res);
-  p2=getData(2);
-  p2.then((res)=>{
-    console.log(res);
-    p3=getData(3);
-    p3.then((res)=>{
-      console.log(res);
-    });
-  });
+  return getData(2);
+}).then((res)=>{
+  console.log(res);
+  return getData(3);
+}).then((res)=>{
+  console.log(res);
+  return getData(4);
+}).then((res)=>{
+  console.log(res);
 });
 
-p1.catch((err)=>{
-  console.log(err);
-})
+// let p1= getData(1);
+// p1.then((res)=>{
+//   console.log(res);
+//   p2=getData(2);
+//   p2.then((res)=>{
+//     console.log(res);
+//     p3=getData(3);
+//     p3.then((res)=>{
+//       console.log(res);
+//     });
+//   });
+// });
+
+// p1.catch((err)=>{
+//   console.log(err);
+// })
 
 
 
