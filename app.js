@@ -1,16 +1,3 @@
-// Async-Await :
-//  async function alway return a promise
-//  await pauses the execution of sorrounding async function until the promise is settled
-
-async function getAllData(){
-  await getData(1);
-  await getData(2);
-  await getData(3);
-}
-
-const output= getAllData();
-console.log(output);
-
 function getData(id){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
@@ -23,3 +10,12 @@ function getData(id){
     },5000);
   });
 }
+
+// iife: immediately invoked function expression
+// syntax: (here it takes a function without name. it may be arrow function, async function or a normal function)();
+
+(async function(){
+  await getData(1);
+  await getData(2);
+  await getData(3);
+})();
