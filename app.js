@@ -1,15 +1,17 @@
-// error handling 
+// asynchronous :
+//  It allows next instructoin to execute in parallel with current instruction so that code flow do not get blocked
 
-let a= 3;
-let b= 5;
+console.log("1");
+console.log("2");
 
-console.log("a:",a,"b:",b);
-console.log("a+b:",a+b);
-
-try{
-  console.log("a*b:",a*c); // here is the error
-} catch(err){
-  console.log(err);
+function hello(){
+  console.log("hello");
 }
+setTimeout(hello,2000);
 
-console.log("a-b:",a-b);
+setTimeout(()=>{
+  console.log("world");
+},2000);
+
+console.log("3");
+console.log("4")
