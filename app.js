@@ -1,21 +1,23 @@
-function getData(id){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-      if (id<=100){
-        console.log(`Data ${id}`);
-        resolve("success");
-      } else {
-        reject("fail");
-      }
-    },5000);
-  });
+// fetch api:
+//  It provide interface for fetching(sending and receiving) resources
+//  It uses request and response objects
+//  The fetch() method is used to fetch data
+//  It return a promise with result as a JSON
+//  We have to convert it into javascript object using json() method which is also using promise
+
+const btn= document.querySelector("#btn1");
+const para= document.querySelector("#para1");
+
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+
+const getFacts= async ()=>{
+  console.log("Getting data..........");
+  let response= await fetch(URL);
+  console.log(response);
+  let data= await response.json(); 
+  console.log(data)
+  para.innerText=data[0].text;
 }
 
-// iife: immediately invoked function expression
-// syntax: (here it takes a function without name. it may be arrow function, async function or a normal function)();
-
-(async function(){
-  await getData(1);
-  await getData(2);
-  await getData(3);
-})();
+btn.addEventListener("click",getFacts);
