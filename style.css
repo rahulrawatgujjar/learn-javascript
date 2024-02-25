@@ -83,3 +83,21 @@ form button {
   font-size: 1.15rem;
   cursor: pointer;
 }
+
+form button:active {
+  border: 1.5px solid #f4e4ba;
+}
+
+.rotate-anime {
+  animation: swapAnime 0.5s ease-in-out 0s 1 normal;
+}
+
+@keyframes swapAnime {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+

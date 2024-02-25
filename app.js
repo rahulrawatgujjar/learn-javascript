@@ -62,4 +62,8 @@ icon.addEventListener("click",()=>{
   toCurr.value=temp;
   updateFlag(fromCurr);
   updateFlag(toCurr);
-})
+  icon.classList.add("rotate-anime");
+  setTimeout(()=>{
+    icon.classList.remove("rotate-anime");
+  },500);
+});
